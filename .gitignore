@@ -1,9 +1,4 @@
-/target
 node_modules/
-dist/
-.build/
-.env
-.env.*
-!.env.example
+build/
+.docusaurus/
 *.log
-.DS_Store
