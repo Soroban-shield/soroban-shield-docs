@@ -12,6 +12,6 @@ export default function CodeBlock({ children, title }: { children: string; title
       {title && <div className="code-title">{title}</div>}
       <pre><code>{children}</code></pre>
       <button type="button" onClick={copy}>{copied ? 'Copied' : 'Copy'}</button>
-    </motion.div>
+    </div>
   );
 }
