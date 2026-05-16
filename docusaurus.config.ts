@@ -11,25 +11,11 @@ const config: Config = {
   projectName: 'soroban-shield-docs',
   onBrokenLinks: 'throw',
   i18n: { defaultLocale: 'en', locales: ['en'] },
-  presets: [
-    [
-      'classic',
-      {
-        docs: { sidebarPath: './sidebars.ts' },
-        theme: { customCss: './src/css/custom.css' },
-      },
-    ],
-  ],
+  presets: [[ 'classic', { docs: { sidebarPath: './sidebars.ts', editUrl: 'https://github.com/Soroban-shield/soroban-shield-docs/tree/main/' }, blog: false, theme: { customCss: './src/css/custom.css' } } ]],
   themeConfig: {
-    navbar: {
-      title: 'Soroban Shield',
-      items: [
-        { type: 'docSidebar', sidebarId: 'docs', position: 'left', label: 'Docs' },
-        { href: 'https://github.com/Soroban-shield', label: 'GitHub', position: 'right' },
-      ],
-    },
+    navbar: { title: 'Soroban Shield', logo: { src: 'img/logo.svg' }, items: [{ type: 'docSidebar', sidebarId: 'docs', label: 'Docs' }, { href: 'https://github.com/Soroban-shield', label: 'GitHub' }] },
+    footer: { copyright: `Copyright © ${new Date().getFullYear()} Soroban Shield` },
     prism: { theme: prismThemes.github, darkTheme: prismThemes.dracula },
   },
 };
-
 export default config;
