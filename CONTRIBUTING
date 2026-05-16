@@ -1,0 +1,7 @@
+# Contributing to soroban-shield-docs
+
+```bash
+npm install
+npm start
+npm run build
+```
