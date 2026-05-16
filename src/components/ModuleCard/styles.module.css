@@ -1,0 +1,12 @@
+.card {
+  display: block;
+  padding: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+.card:hover {
+  border-color: var(--ifm-color-primary);
+}
