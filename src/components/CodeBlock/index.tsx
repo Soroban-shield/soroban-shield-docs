@@ -9,9 +9,9 @@ export default function CodeBlock({ children, title }: { children: string; title
   };
   return (
     <div className="shield-codeblock">
-      {title && <div className="code-title">{title}</motion.div>}
+      {title && <div className="code-title">{title}</div>}
       <pre><code>{children}</code></pre>
       <button type="button" onClick={copy}>{copied ? 'Copied' : 'Copy'}</button>
-    </div>
+    </motion.div>
   );
 }
