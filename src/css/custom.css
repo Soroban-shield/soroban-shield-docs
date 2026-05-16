@@ -1,5 +1,6 @@
 :root {
   --ifm-color-primary: #7c3aed;
-  --ifm-color-primary-dark: #6d28d9;
-  --ifm-font-family-base: system-ui, sans-serif;
 }
+[data-theme='dark'] { --ifm-background-color: #0f172a; }
+.shield-codeblock { position: relative; }
+.shield-codeblock button { position: absolute; top: 0.5rem; right: 0.5rem; }
