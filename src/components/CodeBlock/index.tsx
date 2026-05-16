@@ -8,10 +8,10 @@ export default function CodeBlock({ children, title }: { children: string; title
     setTimeout(() => setCopied(false), 2000);
   };
   return (
-    <motion.div className="shield-codeblock">
-      {title && <motion.div className="code-title">{title}</motion.div>}
+    <div className="shield-codeblock">
+      {title && <div className="code-title">{title}</motion.div>}
       <pre><code>{children}</code></pre>
       <button type="button" onClick={copy}>{copied ? 'Copied' : 'Copy'}</button>
-    </motion.div>
+    </div>
   );
 }
