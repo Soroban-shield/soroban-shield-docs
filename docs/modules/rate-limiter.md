@@ -1,8 +1,5 @@
 # RateLimiter
 
-Per-address call throttling with a sliding time window.
-
-## Functions
-
-- `configure(max_calls, window_seconds)`
-- `check_and_record(caller, now)`
+```rust
+rate_limiter::configure(&env, 10, 60);
+```
