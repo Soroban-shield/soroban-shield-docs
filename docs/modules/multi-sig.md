@@ -1,8 +1,5 @@
 # MultiSig
 
-N-of-M threshold execution for privileged operations.
-
-## Functions
-
-- `create_proposal(creator, action, expiry_ledger)`
-- `execute(proposal_id, approvals, threshold)`
+1. create_proposal
+2. collect approvals
+3. execute
